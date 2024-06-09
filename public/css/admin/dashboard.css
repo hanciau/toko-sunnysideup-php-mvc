@@ -1,0 +1,57 @@
+
+  header {
+    background-color: #333;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+  }
+
+ /* Gaya umum untuk .container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+/* Media query untuk layar lebar (desktop) */
+@media (min-width: 992px) {
+    .container {
+        flex-direction: row;
+        height: 100vh; /* Tinggi penuh viewport */
+    }
+}
+
+/* Media query untuk tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        flex-direction: column;
+        height: auto; /* Tinggi sesuai konten */
+    }
+}
+
+/* Media query untuk perangkat mobile */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        height: auto; /* Tinggi sesuai konten */
+    }
+}
+
+
+  .box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #dddddd;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .box:hover {
+    background-color: #000000;
+  }

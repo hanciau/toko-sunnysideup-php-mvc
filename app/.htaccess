@@ -1,0 +1,7 @@
+Options-indexes
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-F
+
+RewriteCond ^ index.php {L}
